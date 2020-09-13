@@ -1,0 +1,12 @@
+
+Html Text Editor
+https://github.com/quilljs/quill
+https://quilljs.com/
+
+
+Draggable Html Elements
+https://www.w3schools.com/howto/howto_js_draggable.asp
+https://www.w3schools.com/jsref/event_ondrag.asp
+
+Zoomable div
+https://stackoverflow.com/questions/43692714/how-to-zoom-container-div-and-all-its-contents-to-a-specific-size

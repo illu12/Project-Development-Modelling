@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project Development Modelling</title>
+    <meta charset="utf-8">
+    <!-- Css -->
+    <link href="http://localhost:2000/Styles/general.css" rel="stylesheet">
+    <link href="http://localhost:2000/Styles/model.css" rel="stylesheet">
+    <link href="http://localhost:2000/Styles/node.css" rel="stylesheet">
+
+    <!-- Javascript-->
+    <script src="http://localhost:2000/Javascript/model.js"></script>
+    <script src="http://localhost:2000/Javascript/general.js"></script>
+    <script src="http://localhost:2000/Javascript/http.js"></script>
+    <script src="http://localhost:2000/Javascript/logout.js"></script>
+    <script src="http://localhost:2000/Javascript/draggable.js"></script>
+    <script src="http://localhost:2000/Javascript/dev.js"></script>
+
+    <!-- Quil, browser editor -->
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+  </head>
+
+  <body onload="setup();loadAllProjectNames();">
+
+    <!-- node view control -->
+    <input id="selected_node" type="hidden">
+    <!-- end of node view control -->
+
+    <!-- content -->
+    <div id="content">
+      <!-- Model view -->
+      <div id="model_view">
+        <!-- project configurables / listings -->
+        <div>
+          <h1>Model_view</h1>
+          <input id="test" min="1" max="10" value='10' step="1" onchange="showVal(this)" type="range">
+          <select id="all_project_names" onchange="load(this)"></select>
+          <input id="project_name" type="text" placeholder="Project name">
+        </div>
+        <!-- end of project configurables / listings -->
+        <hr>
+        <div id="node-container"></div>
+      </div>
+      <!-- end of Model view -->
+
+      <!-- Text view -->
+      <div id="node_view">
+        <div>
+          <h1>Node_view</h1>
+          <p>Here is the information this node contains, including a header that has metadata for this node and the text itself.</p>
+          <hr>
+        </div>
+        <div id="editor"></div>
+      </div>
+      <!-- end of Text view -->
+    </div>
+    <!-- end of content -->
+
+    <!-- save and get buttons -->
+    <div class="buttons">
+      <button onclick="save()">Save</button>
+      <button onclick="load()">Get</button>
+      <button onclick="del()">Delete</button>
+      <button onclick="logout()">Logout</button>
+    </div>
+    <!-- end of save and get buttons -->
+
+    <!-- modal window with large background and content div -->
+    <div id="modalWindow">
+      <div id="modalWindow-background" onclick="removeModalWindow()"></div>
+      <div id="modalWindow-content">
+        Modal her!
+        <p>Navn</p>
+        <input type="text">
+        <p>Adresse</p>
+        <input type="text">
+      </div>
+    </div>
+    <!-- end of modal window -->
+
+  </body>
+</html>

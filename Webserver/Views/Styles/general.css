@@ -1,0 +1,51 @@
+body{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#content{
+  display: grid;
+  grid-template-columns: 70% auto;
+  height: 90vh;
+}
+.buttons{
+  position: relative;
+  display: block;
+
+  left: auto;
+  top: auto;
+  text-align: center;
+}
+.buttons button{
+  height: 3em;
+  width: 50em;
+}
+
+#modalWindow{
+  display: none;
+  text-align: center;
+}
+#modalWindow-background{
+  position: absolute;
+  z-index: 9;
+  background-color: black;
+  opacity: 50%;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  filter: brightness(70%);
+}
+#modalWindow-content{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: block;
+  z-index: 10;
+  width: 20vw;
+  height: 20vh;
+  background-color: white;
+}

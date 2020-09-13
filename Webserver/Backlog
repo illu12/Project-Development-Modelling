@@ -1,0 +1,54 @@
+Fase 1: Kernefunktionalitet
+18-05 -> Implementer editor
+02-06 -> Lav gem projekt funktionalitet
+08-06 -> Lav hent projekt funktionalitet
+08-06 -> Lav slet projekt funktionalitet
+12-06 -> Lav oprydnings funktionalitet
+12-06 -> Omskriv node midlertidig gem og hent
+12-06 -> Omskriv gem og hent funktionaliteter baseret på ny node data storing
+13-06 -> Ved 'gem' påfør alle ændringer (gem editor ændringer)
+16-06 -> Fix gem funktionen på clientside (laver pludselig data i localStorage)
+20-06 -> Lav slet node funktionalitet
+20-06 -> Lav unik id til hver node ved createNode()
+
+
+Fase 2: Brugersystem (skalerbarhed)
+13-06 -> Lav login side
+13-06 -> Opret 'Users' collection
+13-06 -> Lav 'Users' model
+14-06 -> Opsæt sessions (express-session)
+14-06 -> Lav login controller
+14-06 -> Test next() routing som shadow autentifikation
+15-06 -> Lav logout funktionalitet
+16-06 -> Lav opret user side
+16-06 -> Lav opret user controller
+
+
+Fase 3: Udvid Kernefunktionalitet (flere projekter pr. bruger).
+18-06 -> Tilføj input element til 'project_name' i index.html
+18-06 -> Tilføj select element til index.html
+19-06 -> Tilføj 'project_name' til clientside fetchs (http.js: save)
+17-06 -> Tilføj 'project_name' til save_project controller
+17-06 -> Tilføj 'project_name' til get_project controller
+19-06 -> Lav loadAllProjectNames controller
+19-06 -> Lav loadAllProjectNames onload funktion
+19-06 -> Ændre load() til at godtage input
+19-06 -> Sæt load() som callback på select onchange event
+03-07 -> Gem node positionering (left,top) i localStorage
+
+
+Fase 4: Grafik
+23-06 -> Gør det muligt at lave node cirkler/firkanter (ekstra prompt?)
+24-06 -> Gør model_view zoomable
+24-06 -> Opdel model_view i to divs: header(select,zoom,project_name), body(nodes)
+26-06 -> Gør nodes draggable
+..-.. -> Opdater grafik/design
+..-.. -> Ændre ny node process (instant creation and editing?, ingen prompts?, self-made modal windows?)
+..-.. -> Fix max dimensioner på editor
+
+
+Fase 5: Optimér
+..-.. -> Fix http statuskoder
+..-.. -> Kommentarer til kode
+..-.. -> Flyt js (.style) css til css filer
+..-.. -> Ryd op i .css filer

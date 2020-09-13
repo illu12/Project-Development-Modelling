@@ -1,0 +1,21 @@
+#model_view{
+  border: solid;
+  border-color: black;
+
+}
+.Node{
+  position: absolute;
+  text-align: center;
+  border: solid;
+  border-color: black;
+  width: 115px;
+  height: 115px;
+}
+.close{
+  width: 1.05em;
+  height: 1.05em;
+}
+
+.title{
+  font-size: 12px;
+}

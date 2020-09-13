@@ -1,0 +1,7 @@
+#node_view{
+  border: solid;
+  border-color: black;
+}
+#node_view div{
+  margin: 1em;
+}
